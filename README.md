@@ -26,4 +26,4 @@ installer ce mod change les statistiques du kensaî comme ceci :
 -Hlas mixées entre geurrier et voleur et accés directment à Attaque Tournoyante majeure et Coup Mortel majeur.
 
 
-Spécial : quelques textes restent en anglais mais il n'ont que très peu d'importance : ils ne s'affichent qu'une fois chacun.
+-Spécial : quelques textes restent en anglais mais il n'ont que très peu d'importance : ils ne s'affichent qu'une fois chacun.
