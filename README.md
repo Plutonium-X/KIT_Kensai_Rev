@@ -1,6 +1,7 @@
 # Kensaï revisité :
 
 installer ce mod change les statistiques du kensaî comme ceci :
+
 -Avantages:
 - Classe d'armure 9, -1 tous les 3 niveaux.
 - -1 au facteur de vitesse tous les 4 niveaux.
