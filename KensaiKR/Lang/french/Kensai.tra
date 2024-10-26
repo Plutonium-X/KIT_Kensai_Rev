@@ -1,0 +1,87 @@
+@0 = ~Revision du profil de Kensai~
+@1 = ~KENSAI: Le kensai est un guerrier qui a été spécialement formé pour ne faire qu'un avec son arme. Il est mortel, rapide et a été formé pour aller au combat sans porter d'armure. (Remarque : malgré son nom commun, un kensai peut utiliser n'importe quelle arme de mêlée avec laquelle il est compétent). Gagner et maintenir l'honneur est également une partie vitale de la vie du kensai ; tout kensai dont la réputation tombe en dessous de 6 perd son statut dans la classe. Par la suite, le kensai est traité comme un combattant et progresse en niveau selon la classe de combattant. (Il perd toutes les capacités qu'il avait en tant que kensai).
+
+Avantages:
+- Commence avec une classe d'armure de 9 au 1er niveau et gagne un bonus supplémentaire de +1 tous les 3 niveaux.
+- Gagne un bonus de -1 au facteur de vitesse tous les 4 niveaux.
+- Gagne un bonus de +1 à tous les jets de sauvegarde.
+- Immunisé contre la peur et les baisses de moral.
+- Peut utiliser la capacité Kai une fois par jour et par niveau (commence au 1er niveau avec une utilisation).  
+
+KAI : Toutes les attaques réussies au cours du prochain round infligent des dégâts maximums.
+
+- Niveau 2 : Gagne un +1 aux jets de toucher et de dégâts avec n'importe quelle arme de mêlée tous les 3 niveaux.
+- Niveau 3 : Les attaques sont traitées comme si elles étaient effectuées avec une arme magique à +1. Cet enchantement s'améliore à +2 au niveau 5, +3 au niveau 8, +4 au niveau 10, et +5 au niveau 12. 
+- Niveau 4 : Peut méditer une fois par jour.
+
+MÉDITER : Cette capacité permet au kensai d'éliminer la fatigue comme s'il avait dormi pendant une nuit complète.
+
+- Niveau 7 : Gagne un bonus de +2 au TAC0 de la main secondaire, et peut provoquer la Peur une fois par jour.
+
+PEUR : Tous les ennemis dans un rayon de 3 mètres doivent réussir un jet de sauvegarde contre la paralysie ou fuir paniqués pendant 4 rounds.
+
+- Niveau 11 : Gagne la capacité Attaque Tournoyante une fois par jour.
+
+ATTAQUE TOURNOYANTE : Cette faculté permet au kensai d'infliger une avalanche de coups rapides sur son adversaire. Pendant le round suivant, son nombre d'attaques passe à 10, mais ses jets de toucher et de dégâts subissent une pénalité de -4. La Tornade de fer ne peut être utilisée en conjonction avec Kai.
+
+Désavantages:
+- Ne peut pas se jumeler.
+- Ne peut pas porter d'armure.
+- Ne peut pas porter de gantelets ou de bracelets.
+- Ne peut pas utiliser d'armes magiques ou à projectiles.
+- Alignement limité à loyal.~ 
+@2 = ~Méditer~ 
+@3 = ~Cette capacité permet au kensai d'éliminer la fatigue comme s'il avait dormi pendant une nuit complète.~
+@4 = ~Peur~
+@5 = ~Avec un Cri de guerre, le kensai émet un hurlement puissant et effrayant qui panique tous les adversaires dans un rayon de 10 mètres s'ils ratent un jet de sauvegarde contre la paralysie.~
+@6 = ~Attaque Tournoyante~ 
+@7 = ~Cette faculté permet au kensai d'infliger une avalanche de coups rapides sur son adversaire. Pendant le round suivant, son nombre d'attaques passe à 10, mais ses jets de toucher et de dégâts subissent une pénalité de -4. L'Attaque Tournoyante ne peut être utilisée en conjonction avec Kai.~ 
+@8 = ~KENSAI: Le kensai est un guerrier qui a été spécialement formé pour ne faire qu'un avec son arme. Il est mortel, rapide et a été formé pour aller au combat sans porter d'armure. (Remarque : malgré son nom commun, un kensai peut utiliser n'importe quelle arme de mêlée avec laquelle il est compétent). Gagner et maintenir l'honneur est également une partie vitale de la vie du kensai ; tout kensai dont la réputation tombe en dessous de 6 perd son statut dans la classe. Par la suite, le kensai est traité comme un combattant et progresse en niveau selon la classe de combattant. (Il perd toutes les capacités qu'il avait en tant que kensai).
+
+Avantages:
+- Commence avec une classe d'armure de 9 au 1er niveau et gagne un bonus supplémentaire de +1 tous les 3 niveaux.
+- Gagne un bonus de -1 au facteur de vitesse tous les 4 niveaux.
+- Gagne un bonus de +1 à tous les jets de sauvegarde.
+- Immunisé contre la peur et les baisses de moral.
+- Peut utiliser la capacité Kai une fois par jour et par niveau (commence au 1er niveau avec une utilisation).  
+
+KAI : Toutes les attaques réussies au cours du prochain round infligent des dégâts maximums.
+
+- Niveau 2 : Gagne un +1 aux jets de toucher et de dégâts avec n'importe quelle arme de mêlée tous les 3 niveaux.
+- Niveau 3 : Les attaques sont traitées comme si elles étaient effectuées avec une arme magique à +1. Cet enchantement s'améliore à +2 au niveau 5, +3 au niveau 8, +4 au niveau 10, et +5 au niveau 12. 
+- Niveau 4 : Peut méditer une fois par jour.
+
+MÉDITER : Cette capacité permet au kensai d'éliminer la fatigue comme s'il avait dormi pendant une nuit complète.
+
+- Niveau 7 : Gagne un bonus de +2 au TAC0 de la main secondaire, et peut provoquer la Peur une fois par jour.
+
+PEUR : Tous les ennemis dans un rayon de 3 mètres doivent réussir un jet de sauvegarde contre la paralysie ou fuir paniqués pendant 4 rounds.
+
+- Niveau 11 : Gagne la capacité Attaque Tournoyante une fois par jour.
+
+ATTAQUE TOURNOYANTE : Cette faculté permet au kensai d'infliger une avalanche de coups rapides sur son adversaire. Pendant le round suivant, son nombre d'attaques passe à 10, mais ses jets de toucher et de dégâts subissent une pénalité de -4. La Tornade de fer ne peut être utilisée en conjonction avec Kai.
+
+- Niveau 15 : Gagne la capacité Coup mortel une fois par jour.
+
+COUP MORTEL : Cette faculté permet au Kensai de percer les protections d'une créature. Pendant le round suivant l'activation de cette faculté, toute créature d'un niveau inférieur ou égal au 10ème est instantanément tuée dès qu'il la touche.
+
+Désavantages:
+- Ne peut pas se jumeler.
+- Ne peut pas porter d'armure.
+- Ne peut pas porter de gantelets ou de bracelets.
+- Ne peut pas utiliser d'armes magiques ou à projectiles.
+- Alignement limité à loyal.~ 
+@9 = ~Coup mortel~
+@10 = ~Cette faculté permet au Kensai de percer les protections d'une créature. Pendant le round suivant l'activation de cette faculté, toute créature d'un niveau inférieur ou égal au 10ème est instantanément tuée dès qu'il la touche.~ 
+@11 = ~Second souffle~
+@12 = ~Second souffle
+Avec un effort extraordinaire, un kensai de haut niveau peut éviter une mort presque certaine. L'effet dure 2 rounds, et pendant ce temps, le kensai ne peut pas être réduit en dessous de 1 point de vie. L'utilisation de cette capacité est très épuisante pour le kensai, et il aura probablement besoin de repos immédiatement après.~
+@13 = ~Évasion~
+@14 = ~Évasion
+Le sens naturel de la préservation d'un kensai est renforcé par l'utilisation de la capacité Évasion. L'évasion confère un bonus de 4 à la CA et de 2 à tous les jets de sauvegarde. L'effet dure 3 rounds.~
+@15 = ~Évasion supérieure~ 
+@16 = ~Évasion supérieure
+Version plus puissante de l'Évasion, cette capacité améliore la classe d'armure de 6 et les jets de sauvegarde de 3. De plus, Évasion supérieure permet au kensai de se déplacer si rapidement que sa vitesse de déplacement est augmentée de 2 et que les missiles normaux n'ont aucune chance de le  toucher. Évasion supérieure dure 5 rounds.~
+@17 = ~Ténacité~ 
+@18 = ~Ténacité
+Cette capacité ajoute définitivement 8 points de vie au maximum de points de vie du Kensai.~

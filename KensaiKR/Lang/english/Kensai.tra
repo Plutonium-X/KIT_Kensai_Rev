@@ -1,0 +1,87 @@
+@0 = ~Kensai Kit Revision~
+@1 = ~KENSAI: A kensai is a warrior who has been specially trained to become one with his weapon. They are deadly, fast and have been trained to go into battle without wearing armor. (Note: Despite its common name, a Kensai may use any melee weapon with which he is proficient.) Gaining and maintaining honour is also a vital part of the kensai's life; any kensai whose reputation falls below 6 loses his status in the class. Thereafter the kensai is treated as a fighter and advances in level according to the fighter class. (He loses all of the abilities he had as a kensai.)
+
+Advantages:
+- Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 3 levels.
+- Gains a -1 bonus to Speed Factor every 4 levels.
+- Gains a +1 bonus to all Saving Throws.
+- Immune to fear and morale failure.
+- May use Kai ability once per day per level (starts at 1st level with one use).  
+
+KAI: All successful attacks within the next round deal maximum damage. 
+
+- 2nd level: Gains a +1 to hit and damage rolls with any melee weapon every 3 levels.
+- 3rd level: Attacks are treated as a +1 magical weapon. This enchantment improves to +2 at level 5, +3 at level 8, +4 at level 10, and +5 at level 12.
+- 4th level: May meditate once per day.
+
+MEDITATE: This ability removes fatigue as if the kensai has had a full night's sleep.
+
+- 7th level: Gains a +2 bonus to off hand THAC0, and may cause Fear once per day.
+
+FEAR: All enemies within a 10-ft radius must save vs. paralyzation or run away in panic for 4 rounds.
+
+- 11th level: Gains the Whirlwind Attack ability once per day.
+
+WHIRLWIND ATTACK: This ability allows the kensai to unleash a flurry of super-fast blows. The ability sets one's number of attacks per round to 10 but's one's THAC0 and damage suffer a 4 point penalty. The Whirlwind Attack lasts for one round and may not be used in conjunction with Kai.
+
+Disadvantages:
+- May not dual-class
+- May not wear any armor.
+- May not wear gauntlets or bracers.
+- May not use magical or missile weapons.
+- Alignment restricted to lawful.~
+@2 = ~Meditation~ 
+@3 = ~This ability removes fatigue as if the kensai has had a full night's sleep.~
+@4 = ~Fear~
+@5 = ~With a War Cry, the kensai emits a powerful and frightening yell that will panic all opponents in a 30-ft. radius if they don't make their Save vs. Paralyzation.~
+@6 = ~Whirlwind Attack~ 
+@7 = ~This ability allows the kensai to unleash a flurry of super-fast blows. The ability sets one's number of attacks per round to 10, but one's THAC0 and damage suffer a 4 point penalty. The Whirlwind Attack lasts for one round and may not be used in conjunction with Kai.~ 
+@8 = ~KENSAI: A kensai is a warrior who has been specially trained to become one with his weapon. They are deadly, fast and have been trained to go into battle without wearing armor. (Note: Despite its common name, a Kensai may use any melee weapon with which he is proficient.) Gaining and maintaining honour is also a vital part of the kensai's life; any kensai whose reputation falls below 6 loses his status in the class. Thereafter the kensai is treated as a fighter and advances in level according to the fighter class. (He loses all of the abilities he had as a kensai.)
+
+Advantages:
+- Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 3 levels.
+- Gains a -1 bonus to Speed Factor every 4 levels.
+- Gains a +1 bonus to all Saving Throws.
+- Immune to fear and morale failure.
+- May use Kai ability once per day per level (starts at 1st level with one use).  
+
+KAI: All successful attacks within the next round deal maximum damage. 
+
+- 2nd level: Gains a +1 to hit and damage rolls with any melee weapon every 3 levels.
+- 3rd level: Attacks are treated as a +1 magical weapon. This enchantment improves to +2 at level 5, +3 at level 8, +4 at level 10, and +5 at level 12.
+- 4th level: May meditate once per day.
+
+MEDITATE: This ability removes fatigue as if the kensai has had a full night's sleep.
+
+- 7th level: Gains a +2 bonus to off hand THAC0, and may cause Fear once per day.
+
+FEAR: With a War Cry, the kensai emits a powerful and frightening yell that will panic all opponents in a 30-ft. radius if they don't make their Save vs. Paralyzation.
+
+- 11th level: Gains the Whirlwind Attack ability once per day.
+
+WHIRLWIND ATTACK: This ability allows the kensai to unleash a flurry of super-fast blows. The ability sets one's number of attacks per round to 10 but's one's THAC0 and damage suffer a 4 point penalty. The Whirlwind Attack lasts for one round and may not be used in conjunction with Kai.
+
+- 15th level: Gains the Deathblow ability.
+
+DEATHBLOW: The Deathblow ability allows the kensai to blow through the defences of any lesser creature. For the next round, any creature of 10th level or lower is instantly killed when struck by the kensai.
+
+Disadvantages:
+- May not dual-class
+- May not wear any armor.
+- May not wear gauntlets or bracers.
+- May not use magical or missile weapons.
+- Alignment restricted to lawful.~
+@9 = ~Deathblow~
+@10 = ~This ability allows the kensai to blow through the defences of any lesser creature. The ability sets one's number of attacks per round to 1, and any creature of 10th level or lower is instantly killed when struck by the kensai. The Deathblow ability lasts of one round.~ 
+@11 = ~Second Wind~
+@12 = ~Second Wind
+With extraordinary effort, a high-level kensai can avoid almost certain death. The effect lasts for 2 rounds, and during this time, the kensai cannot be reduced below 1 HP. Use of this ability is very draining on the kensai, and <PRO_HESHE> will likely require rest immediately afterward.~
+@13 = ~Evasion~
+@14 = ~Evasion
+A kensai's natural sense of preservation becomes heightened with the use of the Evasion ability. Evasion gives a bonus of 4 to AC and 2 to all Saving Throws. The effect lasts for 3 rounds.~
+@15 = ~Greater Evasion~ 
+@16 = ~Greater Evasion
+A more powerful version of Evasion, this ability improves Armor Class by 6 and Saving Throws by 3. In addition, Greater Evasion allows the kensai to move so quickly that <PRO_HISHER> movement rate is increased by 2 (base is 10) and normal missiles have no chance of striking <PRO_HIMHER>. Greater Evasion lasts for 5 rounds.~
+@17 = ~Toughness~ 
+@18 = ~Toughness
+Choosing this ability increases the warriors maximum hit points by 8 permanently.~

@@ -1,0 +1,77 @@
+IF 
+Kit(Player1,KENSAI)
+ReputationLT(Player1,6)
+Global("FallenKensai","GLOBAL",0)
+THEN
+RESPONSE #100 
+SetGlobal("FallenKensai","GLOBAL",1)
+ActionOverride(Player1,AddKit(TRUECLASS))
+Wait(5)
+PlaySound("REPDOWN")
+DisplayStringNoName(Player1,~Lost Class: Kensai~) 
+END
+
+IF 
+Kit(Player2,KENSAI)
+ReputationLT(Player1,6)
+Global("FallenKensai","GLOBAL",0)
+THEN
+RESPONSE #100 
+SetGlobal("FallenKensai","GLOBAL",1)
+ActionOverride(Player2,AddKit(TRUECLASS))
+Wait(5)
+PlaySound("REPDOWN")
+DisplayStringNoName(Player2,~Lost Class: Kensai~)  
+END
+
+IF 
+Kit(Player3,KENSAI)
+ReputationLT(Player1,6)
+Global("FallenKensai","GLOBAL",0)
+THEN
+RESPONSE #100 
+SetGlobal("FallenKensai","GLOBAL",1)
+ActionOverride(Player3,AddKit(TRUECLASS))
+Wait(5)
+PlaySound("REPDOWN") 
+DisplayStringNoName(Player3,~Lost Class: Kensai~) 
+END
+
+IF 
+Kit(Player4,KENSAI)
+ReputationLT(Player1,6)
+Global("FallenKensai","GLOBAL",0)
+THEN
+RESPONSE #100 
+SetGlobal("FallenKensai","GLOBAL",1)
+ActionOverride(Player4,AddKit(TRUECLASS))
+Wait(5)
+PlaySound("REPDOWN")
+DisplayStringNoName(Player4,~Lost Class: Kensai~)  
+END
+
+IF 
+Kit(Player5,KENSAI)
+ReputationLT(Player1,6)
+Global("FallenKensai","GLOBAL",0)
+THEN
+RESPONSE #100 
+SetGlobal("FallenKensai","GLOBAL",1)
+ActionOverride(Player5,AddKit(TRUECLASS))
+Wait(5)
+PlaySound("REPDOWN")
+DisplayStringNoName(Player5,~Lost Class: Kensai~)  
+END
+
+IF 
+Kit(Player6,KENSAI)
+ReputationLT(Player1,6)
+Global("FallenKensai","GLOBAL",0)
+THEN
+RESPONSE #100 
+SetGlobal("FallenKensai","GLOBAL",1)
+ActionOverride(Player6,AddKit(TRUECLASS))
+Wait(5)
+PlaySound("REPDOWN")
+DisplayStringNoName(Player6,~Lost Class: Kensai~)  
+END
