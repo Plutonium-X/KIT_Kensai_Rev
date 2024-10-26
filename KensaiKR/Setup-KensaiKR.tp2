@@ -1,0 +1,300 @@
+BACKUP ~KensaiKR/Backup~
+AUTHOR ~Greener~
+VERSION ~2.6~
+
+ALWAYS
+	ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ THEN BEGIN
+		ACTION_DEFINE_ARRAY px_reload BEGIN
+		~kensai.tra~
+		END
+		ACTION_DEFINE_ARRAY px_noconvert BEGIN END
+			LAF HANDLE_CHARSETS
+			INT_VAR
+			infer_charset = 1
+			STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/Lang~
+			noconvert_array = px_noconvert
+			reload_array = px_reload
+		END
+	END
+END
+
+LANGUAGE ~English~ ~english~ ~KensaiKR/Lang/english/kensai.tra~
+LANGUAGE ~French~ ~french~ ~KensaiKR/Lang/french/kensai.tra~
+
+BEGIN @0
+
+/////////////////////////////////////// BGEE ///////////////////////////////////////
+
+ACTION_IF GAME_IS ~bgee~ BEGIN 					// BGEE check
+ACTION_IF FILE_EXISTS_IN_GAME ~enginest.2da~ BEGIN			// v2.367 check
+
+  STRING_SET ~25362~ // New Kensai kit description (character generation)
+
+@1
+
+  STRING_SET ~24286~ // New Kensai kit description (character generation)
+
+@1
+
+COPY ~KensaiKR/Spells/KENSAI1.spl~ ~override~
+SAY NAME1 ~AC Bonus~ 
+SAY UNIDENTIFIED_DESC ~Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 3 levels.~ 
+
+COPY ~KensaiKR/Spells/KENSAI2.spl~ ~override~
+SAY NAME1 ~Initiative~ 
+SAY UNIDENTIFIED_DESC ~Gains a -1 bonus to Speed Factor every 4 levels.~ 
+
+COPY ~KensaiKR/Spells/KENSAI3.spl~ ~override~
+SAY NAME1 ~Saving Throw Bonus~ 
+SAY UNIDENTIFIED_DESC ~Gains a +1 bonus to all Saving Throws.~
+
+COPY ~KensaiKR/Spells/KENSAI4.spl~ ~override~
+SAY NAME1 ~Fear Immunity~ 
+SAY UNIDENTIFIED_DESC ~Gains immunity to fear and moral failure.~ 
+
+COPY ~KensaiKR/Spells/KENSAI5.spl~ ~override~
+SAY NAME1 ~Kai~ 
+SAY UNIDENTIFIED_DESC ~All successful attacks within the next round deal maximum damage.~ 
+
+COPY ~KensaiKR/Spells/KENSAI6.spl~ ~override~
+SAY NAME1 ~THAC0/Damage Bonus~ 
+SAY UNIDENTIFIED_DESC ~Gains a +1 to hit and damage rolls with any melee weapon every 3 levels.~ 
+
+COPY ~KensaiKR/Spells/KENSAI7.spl~ ~override~
+SAY NAME1 @2
+SAY UNIDENTIFIED_DESC @3
+
+COPY ~KensaiKR/Spells/KENSAI8.spl~ ~override~
+SAY NAME1 ~Off-hand THAC0 bonus~ 
+SAY UNIDENTIFIED_DESC ~This passive ability further increases the kensai's skills in dual wielding weapons and grants a +2 bonus to off-hand THAC0.~
+
+COPY ~KensaiKR/Spells/KENSAI9.spl~ ~override~
+SAY NAME1 @4 
+SAY UNIDENTIFIED_DESC @5 
+
+COPY ~KensaiKR/Spells/KENSAIA.spl~ ~override~
+SAY NAME1 @6
+SAY UNIDENTIFIED_DESC @7
+
+COPY ~KensaiKR/Spells/KENSAIB.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +1~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +1 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIC.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +2~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +2 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAID.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +3~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +3 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIE.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +4~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +4 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIF.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +5~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +5 magic weapons.~  
+
+COPY ~KensaiKR/Bams/spcl900B.bam~ ~override~
+COPY ~KensaiKR/Bams/sppr424B.bam~ ~override~
+COPY ~KensaiKR/CLAB/CLABFI04.2da~ ~override~
+
+COPY_EXISTING ~alignmnt.2da~ ~override~				// Alignment.2da
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 4 ~0~			 	// Prevent Kensai from selecting neutral good alignment
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 5 ~0~				// Prevent Kensai from selecting neutral neutral alignment
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 6 ~0~				// Prevent Kensai from selecting neutral evil alignment
+  SET_2DA_ENTRIES_NOW ~KENSAI~ 3					// Actually make the changes
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~abclasrq.2da~ ~override~              		// Abclasrq.2da
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 1 ~12~             		// Sets minimum strength required to 12
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 2 ~14~             		// Sets minimum dexterity required to 12
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 5 ~12~             		// Sets minimum wisdom required to 12
+  SET_2DA_ENTRIES_NOW ~KENSAI~ 3                     		// Actually make the changes
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dualclas.2da~ ~override~              		// Dual-class.2da
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 2 ~0~              		// Prevent Kensai from dual-classing into clerics
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 3 ~0~              		// Prevent Kensai from dual-classing into mages
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 4 ~0~              		// Prevent Kensai from dual-classing into thieves
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 5 ~0~              		// Prevent Kensai from dual-classing into druids
+  SET_2DA_ENTRIES_NOW ~KENSAI~ 3                     		// Actually make the changes
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING_REGEXP "^.+\.itm" override				// Copies all item files to override folder
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN				// Protects against invalid files
+    READ_LONG 0x64 ex_off
+    READ_SHORT 0x68 ex_co
+    READ_LONG 0x60 enchantment				
+    PATCH_IF enchantment > 0 BEGIN					// Patches only those with an enchantment >0
+      READ_BYTE  0x2f "use"
+      WRITE_BYTE 0x2f ("%use%" BOR 0b00000100)			// Adds Kensai flag
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+EXTEND_TOP ~Baldur.bcs~ ~KensaiKR/Script/Kensai.baf~ 	// Fallen Kensai script
+END
+END
+
+/////////////////////////////////////// BG2EE ////////////////////////////////////////
+
+ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN 					// BG2EE
+ACTION_IF FILE_EXISTS_IN_GAME ~enginest.2da~ BEGIN			// v2.367 check
+
+  STRING_SET ~25204~ // New Kensai kit description (character generation)
+
+@8
+
+COPY ~KensaiKR/Spells/KENSAI1.spl~ ~override~
+SAY NAME1 ~AC Bonus~ 
+SAY UNIDENTIFIED_DESC ~Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 3 levels.~ 
+
+COPY ~KensaiKR/Spells/KENSAI2.spl~ ~override~
+SAY NAME1 ~Initiative~ 
+SAY UNIDENTIFIED_DESC ~Gains a -1 bonus to Speed Factor every 4 levels.~ 
+
+COPY ~KensaiKR/Spells/KENSAI3.spl~ ~override~
+SAY NAME1 ~Saving Throw Bonus~ 
+SAY UNIDENTIFIED_DESC ~Gains a +1 bonus to all Saving Throws.~
+
+COPY ~KensaiKR/Spells/KENSAI4.spl~ ~override~
+SAY NAME1 ~Fear Immunity~ 
+SAY UNIDENTIFIED_DESC ~Gains immunity to fear and moral failure.~ 
+
+COPY ~KensaiKR/Spells/KENSAI5.spl~ ~override~
+SAY NAME1 ~Kai~ 
+SAY UNIDENTIFIED_DESC ~All successful attacks within the next round deal maximum damage.~ 
+
+COPY ~KensaiKR/Spells/KENSAI6.spl~ ~override~
+SAY NAME1 ~THAC0/Damage Bonus~ 
+SAY UNIDENTIFIED_DESC ~Gains a +1 to hit and damage rolls with any melee weapon every 3 levels.~ 
+
+COPY ~KensaiKR/Spells/KENSAI7.spl~ ~override~
+SAY NAME1 @2
+SAY UNIDENTIFIED_DESC @3
+
+COPY ~KensaiKR/Spells/KENSAI8.spl~ ~override~
+SAY NAME1 ~Off-hand THAC0 bonus~ 
+SAY UNIDENTIFIED_DESC ~This passive ability further increases the kensai's skills in dual wielding weapons and grants a +2 bonus to off-hand THAC0.~
+
+COPY ~KensaiKR/Spells/KENSAI9.spl~ ~override~
+SAY NAME1 @4 
+SAY UNIDENTIFIED_DESC @5 
+
+COPY ~KensaiKR/Spells/KENSAIA.spl~ ~override~
+SAY NAME1 @6
+SAY UNIDENTIFIED_DESC @7
+
+COPY ~KensaiKR/Spells/KENSAIB.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +1~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +1 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIC.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +2~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +2 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAID.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +3~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +3 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIE.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +4~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +4 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIF.spl~ ~override~
+SAY NAME1 ~Enchant Weapon +5~ 
+SAY UNIDENTIFIED_DESC ~This enables a kensai to hit creatures which can only be hit by +5 magic weapons.~ 
+
+COPY ~KensaiKR/Spells/KENSAIG.spl~ ~override~
+SAY NAME1 @9 
+SAY UNIDENTIFIED_DESC @10
+
+COPY ~KensaiKR/Bams/spcl900B.bam~ ~override~
+COPY ~KensaiKR/Bams/spcl901B.bam~ ~override~
+COPY ~KensaiKR/Bams/spcl907B.bam~ ~override~
+COPY ~KensaiKR/Bams/sppr424B.bam~ ~override~
+COPY ~KensaiKR/CLAB/CLABFI04.2da~ ~override~
+COPY ~KensaiKR/Effects/KENSAIG.eff~ ~override~
+
+COPY_EXISTING ~alignmnt.2da~ ~override~				// Alignment 2da
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 4 ~0~			 	// Prevent Kensai from selecting neutral good alignment
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 5 ~0~				// Prevent Kensai from selecting neutral neutral alignment
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 6 ~0~				// Prevent Kensai from selecting neutral evil alignment
+  SET_2DA_ENTRIES_NOW ~KENSAI~ 3					// Actually make the changes
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~abclasrq.2da~ ~override~              		// Abclasrq 2da
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 1 ~12~             		// Sets minimum strength required to 12
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 2 ~14~             		// Sets minimum dexterity required to 12
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 5 ~12~             		// Sets minimum wisdom required to 12
+  SET_2DA_ENTRIES_NOW ~KENSAI~ 3                     		// Actually make the changes
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dualclas.2da~ ~override~              		// Dual-class 2da
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 2 ~0~              		// Prevent Kensai from dual-classing into clerics
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 3 ~0~              		// Prevent Kensai from dual-classing into mages
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 4 ~0~              		// Prevent Kensai from dual-classing into thieves
+  SET_2DA_ENTRY_LATER ~KENSAI~ 29 5 ~0~              		// Prevent Kensai from dual-classing into druids
+  SET_2DA_ENTRIES_NOW ~KENSAI~ 3                     		// Actually make the changes
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING_REGEXP "^.+\.itm" override				// Copies all item files to override folder
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN				// Protects against invalid files
+    READ_LONG 0x64 ex_off
+    READ_SHORT 0x68 ex_co
+    READ_LONG 0x60 enchantment				
+    PATCH_IF enchantment > 0 BEGIN					// Patches only those with an enchantment >0
+      READ_BYTE  0x2f "use"
+      WRITE_BYTE 0x2f ("%use%" BOR 0b00000100)			// Adds Kensai flag
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+EXTEND_TOP ~Baldur.bcs~ ~KensaiKR/Script/Kensai.baf~ 	// Fallen Kensai script
+END
+END
+
+//////////////////////////////////////// HLA /////////////////////////////////////////
+
+BEGIN ~Kensai High Level Ability revision~
+ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN 					// BG2EE
+ACTION_IF FILE_EXISTS_IN_GAME ~enginest.2da~ BEGIN			// v2.367 check
+
+INCLUDE ~KensaiKR/library/hla_actions.tpa~		// Modify HLA functions (subtledoctor)
+				
+COPY ~KensaiKR/Spells/KENSAIH.spl~ ~override~		// Custom HLA Second Wind
+SAY NAME1 @11 
+SAY UNIDENTIFIED_DESC @12
+
+COPY ~KensaiKR/Spells/KENSAII.spl~ ~override~		// HLA Evasion (description change)
+SAY NAME1 @13 
+SAY UNIDENTIFIED_DESC @14
+
+COPY ~KensaiKR/Spells/KENSAIJ.spl~ ~override~		// HLA Greater Evasion (description change)
+SAY NAME1 @15
+SAY UNIDENTIFIED_DESC @16
+
+COPY ~KensaiKR/BAMS/SPWI214B.bam~ ~override~          	// HLA Toughness
+COPY ~KensaiKR/Spells/SPCL942.spl~ ~override~         	// HLA Toughness
+SAY NAME1 @17
+SAY UNIDENTIFIED_DESC @18
+
+LAF action_remove_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL900~ END											// Delete Whirlwind
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL901~ ability = ~GA_SPCL901~ num_allowed = ~20~ END	 				// Greater Whirlwind
+LAF action_remove_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL902~ END											// Delete Deathblow
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL903~ ability = ~GA_SPCL903~ num_allowed = ~20~ END	 				// Greater Deathblow
+LAF action_remove_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL908~ END											// Delete War Cry
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL906~ ability = ~GA_SPCL906~ num_allowed = ~20~ END					// Power Attack
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL905~ ability = ~GA_SPCL905~ num_allowed = ~20~ prerequisite = ~GA_SPCL906~ END	// Critical Strike
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL909~ ability = ~GA_SPCL909~ num_allowed = ~20~ prerequisite = ~GA_SPCL905~ END	// Smite
+LAF action_add_hla STR_VAR kit_name = ~KENSAI~ ability = ~GA_KENSAII~ num_allowed = ~20~ END					 				// Evasion
+LAF action_add_hla STR_VAR kit_name = ~KENSAI~ ability = ~GA_KENSAIJ~ num_allowed = ~20~ prerequisite = ~GA_KENSAII~ END	 	 				// Greater Evasion
+LAF action_add_hla STR_VAR kit_name = ~KENSAI~ ability = ~GA_KENSAIH~ num_allowed = ~1~ END				 	 				// Second Wind
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL907~ ability = ~GA_SPCL907~ num_allowed = ~20~ END	 				// Hardiness
+LAF action_replace_hla STR_VAR kit_name = ~KENSAI~ remove_ability = ~GA_SPCL904~ ability = ~GA_SPCL904~ num_allowed = ~20~ END 	 				// Resist Magic	
+LAF action_add_hla STR_VAR kit_name = ~KENSAI~ ability = ~AP_SPCL942~ num_allowed = ~5~ END									// Toughness
+END
+END
