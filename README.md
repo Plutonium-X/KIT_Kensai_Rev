@@ -1,6 +1,6 @@
 # Kensaï revisité :
 
-installer ce mod change les statistiques du kensaî comme ceci :
+installer ce mod change les statistiques du kensaï comme ceci :
 
 -Avantages:
 - Classe d'armure 9, -1 tous les 3 niveaux.
@@ -20,10 +20,10 @@ installer ce mod change les statistiques du kensaî comme ceci :
 - Pas de jumelage
 - Pas d'armure
 - Pas de bracelets
-- PAs d'arme magique, pas d'armes à projectile
+- Pas d'armes magiques, pas d'armes à projectile
 - Alignement loyal
 
--Hlas mixées entre geurrier et voleur et accés directment à Attaque Tournoyante majeure et Coup Mortel majeur.
+-Hlas mixées entre geurrier et voleur et accés direct à Attaque Tournoyante majeure et Coup Mortel majeur.
 
 
 -Spécial : quelques textes restent en anglais mais il n'ont que très peu d'importance : ils ne s'affichent qu'une fois chacun.
