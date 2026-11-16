@@ -27,3 +27,32 @@ installer ce mod change les statistiques du kensaï comme ceci :
 
 
 -Spécial : quelques textes restent en anglais mais il n'ont que très peu d'importance : ils ne s'affichent qu'une fois chacun.
+
+----------------------
+# Revised Kensai
+
+Installing this mod changes the Kensai's abilities as follows:
+
+**Advantages:**
+- Base Armor Class of 9, improved by 1 every 3 levels.
+- -1 to speed factor every 4 levels.
+- +1 bonus to all saving throws.
+- Immune to fear.
+- Kai ability once per level (all successful attacks during the next round deal maximum damage).
+
+- **Level 2:** +1 to hit and damage every 3 levels.
+- **Level 3:** Attacks are considered magical +1. This increases to +2 at level 5, +3 at level 8, +4 at level 10, and +5 at level 12.
+- **Level 4:** Meditation ability once per day (removes fatigue).
+- **Level 7:** +2 THAC0 bonus with the off-hand weapon, and Fear ability once per day (enemies must save vs. paralysis or flee for 4 rounds).
+- **Level 11:** Whirlwind Attack ability once per day (as the HLA).
+- **Level 15:** Deathblow ability once per day (as the HLA).
+
+**Disadvantages:**
+- Cannot dual-class.
+- Cannot wear armor.
+- Cannot wear bracers.
+- Cannot use magical weapons or missile weapons.
+- Must be of Lawful alignment.
+
+**High-Level Abilities (HLAs):**
+- A combination of Fighter and Thief HLAs, with direct access to Greater Whirlwind Attack and Greater Deathblow.
